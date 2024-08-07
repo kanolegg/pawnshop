@@ -1,0 +1,442 @@
+@font-face {
+  font-family: 'Montserrat'; 
+  src: url(../fonts/Montserrat-Regular.ttf); 
+}
+
+tr {
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+
+  color: #e4a11b;
+}
+
+.sales-button {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.sales-button span {
+  background: #fff;
+  height: 40px;
+  margin: 10px;
+  mask-image: var(--sales-buttons-item-src);
+  -webkit-mask-image: var(--sales-buttons-item-src);
+  mask-position: 50% 50%;
+  -webkit-mask-position: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  width: 40px;
+}
+
+.promo-block span {
+  font-size: 16px;
+}
+
+.promo-block strong {
+ font-size: 40px;
+ color: #e4a11b;
+}
+
+.promo-block.big strong {
+ font-size: 40px;
+ color: #e4a11b;
+}
+
+#pills-tab {
+  gap: 1rem;
+}
+
+.price-button {
+  font-size: 1.2rem;
+}
+
+.price-button.active:before {
+  background: #e4a11b;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 8px;
+  width: 8px;
+  margin-right: .4rem;
+  margin-bottom: .1rem;
+}
+
+.price tr th,
+.price tr td {
+  text-align: center;
+}
+
+.catalog-link {
+  border-bottom: 2px solid #e4a11b;
+}
+
+.catalog-item {
+  background-color: #f8f9fa;
+}
+
+.catalog-item:hover {
+  background-color: #f3f3f3;
+}
+
+.catalog-item img {
+  max-width: 180px;
+}
+
+[class*='row-cut-'] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.navbar-brand,
+.nav-link {
+  font-size: 1.1rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 30px;
+  height: 30px;
+  text-shadow: 0px 0px 8px #e4a11b;
+
+  color: #e4a11b;
+  font-size: 2rem;
+
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e4a11b;
+  outline: none;
+}
+
+.sell-btn {
+  background-color: #F9F9FA;
+  color: #000;
+}
+
+.add-to-cart:hover, .add-to-cart:focus {
+  background-color: transparent;
+    color: #e4a11b;
+    border-color: #e4a11b;
+}
+
+.sell-btn:hover {
+  border-color: #F9F9FA;
+  box-shadow: 0 4px 4px -4px rgba(0,0,0,0.1),0 4px 8px 0 rgba(0,0,0,0.1)!important;
+}
+
+.sell-btn.active {
+  background-color: #e4a11b;
+  color: #fff;
+}
+
+.sell-btn.active:hover {
+  border-color: #e4a11b;
+}
+
+#sell-banner {
+  background-image: url(/assets/img/sell-banner.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-color: #606060;
+  position: relative;
+}
+
+#sell-banner::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000;
+  opacity: 0.65;
+}
+
+#sell-banner .container {
+  position: relative;
+}
+
+.row-cut {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+}
+
+.row-cut-1 {
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.row-cut-2 {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.row-cut-3 {
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+[class*=btn-outline-] {
+  padding: 0.5rem 1.375rem 0.375rem;
+  border-width: 2px;
+  border-style: solid;
+  box-shadow: none;
+}
+
+.btn:hover, .btn:focus {
+  box-shadow: 0 8px 9px -4px rgba(0,0,0,0.15),0 4px 18px 0 rgba(0,0,0,0.1);
+}
+
+.btn-success {
+  background-color: #14a44d;
+  color: #fff;
+  box-shadow: 0 4px 9px -4px #14a44d;
+  border-width: 0;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+  background-color: #139c49;
+}
+
+.btn-primary {
+  background-color: #3b71ca;
+  border-color: #3b71ca;
+  color: #fff;
+  box-shadow: 0 4px 5px -4px #3b71ca;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #386bc0;
+  border-color: #386bc0;
+}
+.btn-warning {
+  background-color: #e4a11b!important;
+  color: #fff!important;
+  border-color: #e4a11b!important;
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active {
+  background-color: #d9991a;
+  border-color: #d9991a;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #e4a11b;
+  color: #fff;
+  box-shadow: 0 4px 9px -4px #e4a11b;
+  border-color: #e4a11b;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+  background-color: #f37044;
+  color: #fff;
+  border-color: #f37044;
+}
+
+.btn-secondary {
+  background-color: #e3ebf7;
+  color: #285192;
+  box-shadow: 0 4px 5px -4px #e3ebf7;
+  border: none;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #d8dfeb;
+  color: #285192;
+}
+
+.btn-info {
+  background-color: #54b4d3;
+  color: #fff;
+  box-shadow: 0 4px 5px -4px #54b4d3;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active {
+  background-color: #50abc8;
+  color: #fff!important;
+}
+
+.btn-rounded {
+  border-radius: 10rem;
+}
+
+.btn-outline-secondary {
+  border-color: #e3ebf7;
+  background-color: transparent;
+  color: #285192;
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active {
+  background-color: transparent;
+  color: #264d8b;
+  border-color: #d8dfeb;
+}
+
+.btn-outline-warning {
+  background-color: transparent;
+  color: #e4a11b;
+  border-color: #e4a11b;
+}
+
+.btn-outline-warning:hover {
+  background-color: #e4a11b;
+  color: #fff;
+  border-color: #e4a11b;
+}
+
+.btn-outline-primary {
+  color: #3b71ca;
+  background-color: #00000000;
+  border-color: #3b71ca;
+}
+
+.btn-outline-primary:hover {
+  border-color: #386bc0;
+  background-color: transparent;
+  color: #386bc0;
+  box-shadow: none;
+}
+
+.badge-primary {
+  background-color: #dfe7f6;
+  color: #2c58a0;
+}
+
+.badge-secondary {
+  background-color: #ebedef;
+  color: #40464f;
+}
+
+.badge-success {
+  background-color: #d6f0e0;
+  color: #0d6832;
+}
+
+.badge-danger {
+  background-color: #f9e1e5;
+  color: #af233a;
+}
+
+.badge-warning {
+  background-color: #fbf0da;
+  color: #73510d;
+}
+
+.badge-info {
+  background-color: #def1f7;
+  color: #1c657d;
+}
+
+.badge-light {
+  background-color: #f5f5f5;
+  color: #4f4f4f;
+}
+
+.badge-dark {
+  background-color: #332e2e;
+  color: #f5f5f5;
+}
+
+.text-primary {
+  color: #3b70ca!important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: transparent;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+a {
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+
+.owl-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.owl-dots button.owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e2e2e2;
+  margin: 0 3px;
+}
+
+.owl-carousel button.owl-dot.active {
+  background: #c6c6c6;
+}
+
+
+@media (max-width: 767px) {
+  
+}
+
+@media (max-width: 991px) {
+  .top-info {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sales-button span {
+    height: 60px;
+    width: 60px;
+  }
+
+  .promo-block strong {
+    font-size: 28px;
+  }
+
+  .promo-block.big strong {
+    font-size: 60px;
+  }
+
+  .promo-block span {
+    font-size: 20px;
+  }
+
+  .advantages__icon {
+    width: 75px;
+  }
+}
